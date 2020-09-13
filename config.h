@@ -63,10 +63,13 @@ static const char unknown_str[] = "n/a";
  */
 #define SEP " \u25aa "
 static const struct arg args[] = {
-	/* function format          argument */
-	{ keymap, " %s" SEP,                      NULL },
-	{ disk_free, "\uf7c9 %s" SEP,          "/" },
-	{ disk_free, "\uf7db %s" SEP,          "/home" },
-	{ ram_free,  "\ufb19 %s" SEP,                 NULL },
-	{ datetime, "\uf5f5 %s",           "%d.%m.%Y. %H:%m" },
+	/* function     format              argument */
+	{  keymap,      " %s" SEP,          NULL              },
+	{  disk_free,   "\uf7c9 %s" SEP,    "/"               },
+	{  disk_free,   "\uf7db %s" SEP,    "/home"           },
+	{  ram_free,    "\ufb19 %s" SEP,    NULL              },
+        //{  temp,        "%s" SEP,           "thermal_zone0"   },
+        {  vol_perc,    "\ufa7d %s%%" SEP,  "/dev/mixer"      },
+        {  netspeed_tx, "\uf817 %8s" SEP,   "eth0"            },
+	{  datetime,    "\uf5f5 %s",        "%d.%m.%Y. %H:%m" },
 };
