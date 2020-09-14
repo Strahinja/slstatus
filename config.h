@@ -68,8 +68,8 @@ static const struct arg args[] = {
 	{  disk_free,   "\uf7c9 %s" SEP,    "/"               },
 	{  disk_free,   "\uf7db %s" SEP,    "/home"           },
 	{  ram_free,    "\ufb19 %s" SEP,    NULL              },
-        //{  temp,        "%s" SEP,           "thermal_zone0"   },
+        {  temp,        "\ufa0e %s\u00b0C" SEP,           "/sys/class/thermal/thermal_zone0/temp"   },
         {  vol_perc,    "\ufa7d %s%%" SEP,  "/dev/mixer"      },
-        {  netspeed_tx, "\uf817 %8s" SEP,   "eth0"            },
+        //{  netspeed_tx, "\uf817 %8s" SEP,   "eth0"            },
 	{  datetime,    "\uf5f5 %s",        "%d.%m.%Y. %H:%m" },
 };
