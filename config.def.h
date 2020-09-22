@@ -73,5 +73,5 @@ static const struct arg args[] = {
         {  temp,        "\ufa0e %s\u00b0C" SEP,  "/sys/class/thermal/thermal_zone0/temp"   },
         {  vol_perc,    "\ufa7d %s%%" SEP,       "/dev/mixer"      },
         //{  netspeed_tx, "\uf817 %8s" SEP,        "eth0"            },
-	{  datetime,    "\uf5f5 %s",             "%d.%m.%Y. %H:%m" },
+	{  datetime,    "\uf5f5 %s",             "%d.%m.%Y. %H:%M" },
 };
